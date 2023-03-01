@@ -1,4 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+:root {
+  --default-large-font-size: 32px;
+  --default-medium-font-size: 16px;
+  --default-small-font-size: 12px;
+  --default-large-font-weight: 700;
+  --default-medium-font-size: 600;
+  --default-small-font-size: 400;
+  --height: 100%;
+  --box-width: 1136px;
+  --box-height: 456px;
+  --direction: row;
+  --img-width: 72px;
+  --margin-big: 32px;
+  --margin-medium: 24px;
+  --margin-small: 16px;
+  --wrapper-padding-big: 180px;
+  --wrapper-padding-small: 152px;
+  --button-width: 132px;
+  --position-button: absolute;
+  --margin-btn-x: 0px --margin-btn-y: 0px;
+  --bottom-h: 104px;
+  --display: grid;
+}
+
+@media only screen and (max-width: 834px) {
+  :root {
+    --default-large-font-size: 32px;
+    --default-medium-font-size: 16px;
+    --default-small-font-size: 12px;
+    --default-large-font-weight: 700;
+    --default-medium-font-size: 600;
+    --default-small-font-size: 400;
+    --width: 90%;
+    --height: auto;
+    --box-width: 1136px;
+    --box-height: 1194px;
+    --direction: column;
+    --img-width: 72px;
+    --margin-big: 24px;
+    --margin-medium: 16px;
+    --margin-small: 8px;
+    --wrapper-padding-big: 120px;
+    --wrapper-padding-small: 41px;
+    --button-width: 128px;
+    --position-button: static;
+    --margin-btn-x: 24px;
+    --margin-btn-y: 24px;
+    --bottom-h: 0;
+    --display: flex;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  :root {
+    --default-large-font-size: 26px;
+    --default-medium-font-size: 14px;
+    --default-small-font-size: 12px;
+    --default-large-font-weight: 700;
+    --default-medium-font-size: 400;
+    --default-small-font-size: 400;
+    --width: 100%;
+    --height: auto;
+    --box-width: 375px;
+    --box-height: 1151px;
+    --direction: column;
+    --img-width: 48px;
+    --margin-big: 16px;
+    --margin-medium: 16px;
+    --margin-small: 8px;
+    --wrapper-padding-big: 21px;
+    --wrapper-padding-small: 16px;
+    --button-width: 128px;
+    --position-button: static;
+    --margin-btn-x: 16px;
+    --margin-btn-y: 24px;
+    --bottom-h: 0;
+    --display: flex;
+  }
+}
+
 body {
   font-family: 'Raleway', sans-serif;
   width: auto;
@@ -122,84 +202,4 @@ body {
 
 #home-page .card-container--yellow {
   background-color: #F4F1E4;
-}
-
-:root {
-  --default-large-font-size: 32px;
-  --default-medium-font-size: 16px;
-  --default-small-font-size: 12px;
-  --default-large-font-weight: 700;
-  --default-medium-font-size: 600;
-  --default-small-font-size: 400;
-  --height: 100%;
-  --box-width: 1136px;
-  --box-height: 456px;
-  --direction: row;
-  --img-width: 72px;
-  --margin-big: 32px;
-  --margin-medium: 24px;
-  --margin-small: 16px;
-  --wrapper-padding-big: 180px;
-  --wrapper-padding-small: 152px;
-  --button-width: 132px;
-  --position-button: absolute;
-  --margin-btn-x: 0px --margin-btn-y: 0px;
-  --bottom-h: 104px;
-  --display: grid;
-}
-
-@media only screen and (max-width: 834px) {
-  :root {
-    --default-large-font-size: 32px;
-    --default-medium-font-size: 16px;
-    --default-small-font-size: 12px;
-    --default-large-font-weight: 700;
-    --default-medium-font-size: 600;
-    --default-small-font-size: 400;
-    --width: 90%;
-    --height: auto;
-    --box-width: 1136px;
-    --box-height: 1194px;
-    --direction: column;
-    --img-width: 72px;
-    --margin-big: 24px;
-    --margin-medium: 16px;
-    --margin-small: 8px;
-    --wrapper-padding-big: 120px;
-    --wrapper-padding-small: 41px;
-    --button-width: 128px;
-    --position-button: static;
-    --margin-btn-x: 24px;
-    --margin-btn-y: 24px;
-    --bottom-h: 0;
-    --display: flex;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  :root {
-    --default-large-font-size: 26px;
-    --default-medium-font-size: 14px;
-    --default-small-font-size: 12px;
-    --default-large-font-weight: 700;
-    --default-medium-font-size: 400;
-    --default-small-font-size: 400;
-    --width: 100%;
-    --height: auto;
-    --box-width: 375px;
-    --box-height: 1151px;
-    --direction: column;
-    --img-width: 48px;
-    --margin-big: 16px;
-    --margin-medium: 16px;
-    --margin-small: 8px;
-    --wrapper-padding-big: 21px;
-    --wrapper-padding-small: 16px;
-    --button-width: 128px;
-    --position-button: static;
-    --margin-btn-x: 16px;
-    --margin-btn-y: 24px;
-    --bottom-h: 0;
-    --display: flex;
-  }
 }
